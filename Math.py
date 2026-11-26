@@ -64,4 +64,5 @@ def calcular_factorial(n: int) -> int:
 
     return resultado 
 
-print(calcular_factorial(2))
+
+    
