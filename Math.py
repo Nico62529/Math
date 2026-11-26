@@ -81,7 +81,7 @@ def fizzbuzz() -> int:
             i = "FizzBuzz"
         elif i % 3 == 0:
             i = "Fizz"
-        elif 1 % 5 == 0:
+        elif i % 5 == 0:
             i = "Buzz"
 
 # N-OP
@@ -94,5 +94,12 @@ def suman(n: int) -> int:
 
 # Fibonacci 
 
-def fibonacci() -> int:
-    
+def fibonacci():
+    anterior = 0
+    actual = 1
+    while actual <= 100:
+        s = anterior + actual
+        anterior = actual
+        actual = s
+        print(s)
+
